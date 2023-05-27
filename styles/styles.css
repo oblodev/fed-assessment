@@ -11,7 +11,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-style: normal;
   font-weight: 700;
   margin: 0;
@@ -70,8 +71,16 @@ p {
   justify-content: space-between;
   background: #ffffff;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05);
-  height: 80px;
+  height: 60px;
   padding: 15px;
+}
+.navigation__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navigation__logo img {
+  height: 32px;
 }
 .navigation__btn {
   display: flex;
@@ -106,7 +115,7 @@ p {
   position: fixed;
   width: 100%;
   background-color: #ffffff;
-  top: 80px;
+  top: 60px;
   left: 0;
   padding: 0;
   height: 100vh;
@@ -166,7 +175,7 @@ p {
   height: calc(100% + 16px);
   top: -16px;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: 2;
   opacity: 0;
   pointer-events: none;
@@ -296,7 +305,7 @@ p {
   display: flex;
   justify-content: flex-end;
 }
-.accordion__btn button {
+.accordion__btn-mobile {
   padding: 10px 30px;
   background-color: inherit;
   font-weight: 700;
@@ -304,9 +313,11 @@ p {
   line-height: 170%;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+  border: 1px solid #404040;
+  color: #404040;
 }
-.accordion__btn button:hover {
-  background-color: #333333;
+.accordion__btn-mobile:hover {
+  background-color: #404040;
   color: #fff;
   cursor: pointer;
 }
@@ -412,32 +423,32 @@ p {
     border: 0;
   }
 }
-.footer__links ul {
+.footer__links-list {
   list-style-type: none;
   text-decoration: none;
   padding: 0;
   margin: 0;
 }
 @media screen and (min-width: 479px) {
-  .footer__links ul {
+  .footer__links-list {
     display: flex;
     flex-direction: row;
     align-items: center;
   }
 }
-.footer__links ul li {
+.footer__links-list li {
   margin-bottom: 15px;
 }
 @media screen and (min-width: 479px) {
-  .footer__links ul li {
+  .footer__links-list li {
     margin-right: 16px;
     margin-bottom: 0px;
   }
 }
-.footer__links ul li:last-child {
+.footer__links-list li:last-child {
   margin-bottom: 0px;
 }
-.footer__links ul li a {
+.footer__links-list li a {
   text-decoration: none;
   color: #6e6a69;
 }

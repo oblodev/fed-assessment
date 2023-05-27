@@ -90,6 +90,6 @@ window.addEventListener("scroll", function () {
   if (window.pageYOffset >= 1) {
     menu.style.top = "0";
   } else {
-    menu.style.top = "80px";
+    menu.style.top = "60px";
   }
 });
