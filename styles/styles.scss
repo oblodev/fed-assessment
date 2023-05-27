@@ -326,7 +326,7 @@ p {
     display: flex;
     justify-content: flex-end;
 
-    button {
+    .accordion__btn-mobile {
       padding: 10px 30px;
       background-color: inherit;
       font-weight: 700;
@@ -334,9 +334,11 @@ p {
       line-height: 170%;
       transition: all 0.3s ease-in-out;
       cursor: pointer;
+      border: 1px solid $accordion-color;
+      color: $accordion-color;
 
       &:hover {
-        background-color: #333333;
+        background-color: $accordion-color;
         color: #fff;
         cursor: pointer;
       }
